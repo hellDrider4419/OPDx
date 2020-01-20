@@ -22,8 +22,10 @@ import com.example.login.R;
 
 public class HospitalsFragment extends Fragment implements AdapterView.OnItemClickListener{
 
+
     private HospitalsViewModel hospitalsViewModel;
     ListView lv;
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {

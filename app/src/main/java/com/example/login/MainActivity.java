@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     EditText aadharno;
     Button signup;
     Button login;
-    Button forgotPass;
+
 
     FirebaseAuth firebaseAuth;
 
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         aadharno = findViewById(R.id.aadhar);
         signup = findViewById(R.id.signup);
         login = findViewById(R.id.Login);
-        forgotPass = findViewById(R.id.UserForgotPass);
+
 
         toolbar.setTitle(R.string.app_name);
 
@@ -119,12 +119,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        forgotPass.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, ForgotPasswordActivity.class));
-            }
-        });
 
     }
 }

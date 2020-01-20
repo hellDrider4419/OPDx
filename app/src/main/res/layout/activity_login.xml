@@ -49,4 +49,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login" />
+
+    <Button
+        android:id="@+id/UserForgotPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Forgot Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Login"
+        tools:ignore="MissingConstraints" />
+
+
 </LinearLayout>

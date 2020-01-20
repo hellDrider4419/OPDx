@@ -7,22 +7,80 @@
     tools:context=".Hospital1Activity"
     android:id="@+id/list_layout">
 
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/sam"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Set Appointments"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="Hospital 1 details"
-        android:textSize="30dp"
+        android:layout_marginTop="16dp"
+        android:text="Hospital 1"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+
+
+        android:text="Dummy_Text A hospital is a health care institution providing patient treatment with specialized medical and nursing staff and medical equipment"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="498dp"
+        android:layout_height="279dp"
+        android:background="@drawable/hospital"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hospital"
+        tools:srcCompat="@drawable/hospital" />
 
-    <ExpandableListView
-        android:id="@+id/ailment_list"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/datec"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"></ExpandableListView>
-
+        android:layout_marginTop="30dp"
+        android:text="Select Date"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sam" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

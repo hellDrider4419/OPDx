@@ -25,6 +25,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText userEmail;
     EditText userPass;
     Button userLogin;
+    Button forgotPass;
 
     FirebaseAuth firebaseAuth;
 
@@ -38,6 +39,7 @@ public class LoginActivity extends AppCompatActivity {
         userEmail = findViewById(R.id.UserEmail);
         userPass = findViewById(R.id.UserPass);
         userLogin = findViewById(R.id.UserLogin);
+        forgotPass = findViewById(R.id.UserForgotPass);
 
         toolbar.setTitle("Login");
 
@@ -63,5 +65,14 @@ public class LoginActivity extends AppCompatActivity {
                 });
             }
         });
+
+        forgotPass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, ForgotPasswordActivity.class));
+            }
+        });
+
     }
+    
 }
