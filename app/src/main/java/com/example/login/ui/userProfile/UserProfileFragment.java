@@ -22,6 +22,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.example.login.Main2Activity;
 import com.example.login.MainActivity;
 import com.example.login.ProfileActivity;
 import com.example.login.User;
@@ -53,21 +54,18 @@ public class UserProfileFragment extends Fragment {
         userProfileViewModel =
                 ViewModelProviders.of(this).get(UserProfileViewModel.class);
         View root = inflater.inflate(R.layout.fragment_user_name, container, false);
-        final TextView textView = root.findViewById(R.id.text_tools);
-
-        //signOut = getView().getId() == R.id.signOut;
-        /*if (getView().getId() == R.id.signOut){
-            signOut.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    FirebaseAuth.getInstance().signOut();
-                    Intent intent = new Intent(this, MainActivity.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                    startActivity(intent);
-                }
+        signOut =  root.findViewById(R.id.signOut) ;
+        signOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(getActivity(), Main2Activity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
             }
-        }*/
+        });
+
 
         return root;
     }
