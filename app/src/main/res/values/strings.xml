@@ -13,4 +13,51 @@
     <string name="menu_appointments">Appointments</string>
     <string name="menu_user_name">User Profile</string>
 
+    <string-array name="list">
+        <item>Hospital 1</item>
+        <item>Hospital 2</item>
+        <item>Hospital 3</item>
+    </string-array>
+
+    <string name="ailment1">ailment 1</string>
+    <string name="ailment2">ailment 2</string>
+    <string name="ailment3">ailment 3</string>
+    <string name="ailment4">ailment 4</string>
+    <string name="ailment5">ailment 5</string>
+    <string name="ailment6">ailment 6</string>
+
+    <string-array name="ailment1">
+        <item>ail 1</item>
+    </string-array>
+    <string-array name="ailment2">
+        <item>ail 1</item>
+        <item>ail 2</item>
+    </string-array>
+    <string-array name="ailment3">
+        <item>ail 1</item>
+        <item>ail 2</item>
+        <item>ail 3</item>
+    </string-array>
+    <string-array name="ailment4">
+        <item>ail 1</item>
+        <item>ail 2</item>
+        <item>ail 3</item>
+        <item>ail 4</item>
+    </string-array>
+    <string-array name="ailment5">
+        <item>ail 1</item>
+        <item>ail 2</item>
+        <item>ail 3</item>
+        <item>ail 4</item>
+        <item>ail 5</item>
+    </string-array>
+    <string-array name="ailment6">
+        <item>ail 1</item>
+        <item>ail 2</item>
+        <item>ail 3</item>
+        <item>ail 4</item>
+        <item>ail 5</item>
+        <item>ail 6</item>
+    </string-array>
+
 </resources>
